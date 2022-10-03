@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="Erick Cordon" content="Bio Page W1 Assignment">
     <title>Bio Page</title>
+
+    <style>
+        body{
+            background-color: rgb(241, 214, 180);
+        }
+        h1{
+            color:green;
+        }
+
+        h2{
+            color:purple;
+        }
+
+        .hide{
+            display: none;
+        }
+    </style>
+
 </head>
 <body>
     <h1>Erick Cordon</h1>
@@ -36,7 +54,7 @@
 
         </div>
 
-        <div id="ed">
+        <div id="ed" class="hide">
 
             <h2>Schooling</h2>
 
@@ -58,9 +76,11 @@
 
             </ul>
 
+            <hr>
+
         </div>
         
-        <div id="hobbies">
+        <div id="hobbies" class="hide">
 
             <h2>Interests</h2>
 
@@ -85,11 +105,43 @@
 
         </div>
 
-
-
     </div>
 
+    <script>
+        var bio = document.querySelector(`#bio`) //this connects to the bio div
+
+        var ed = document.querySelector(`#ed`) // connects to ed div
+
+        var hobbies = document.querySelector(`#hobbies`)  //connects to hobbies div
+
+        var link = document.querySelectorAll(`a`)
+
+        link[0].addEventListener(`click`, function(e){display(bio)})
+        link[1].addEventListener(`click`, function(e){showED(ed)})
+        link[2].addEventListener(`click`, function(e){showHOB(hobbies)})
 
 
+        function display(e)
+        {
+            bio.classList.remove(`hide`)
+            ed.classList.add(`hide`)
+            hobbies.classList.add(`hide`)
+        }
+
+        function showED(e)
+        {
+            bio.classList.add(`hide`)
+            ed.classList.remove(`hide`)
+            hobbies.classList.add(`hide`)
+        }
+
+        function showHOB(e)
+        {
+            bio.classList.add(`hide`)
+            ed.classList.add(`hide`)
+            hobbies.classList.remove(`hide`)
+        }
+
+    </script>
 </body>
 </html>
