@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta author="Erick Cordon" content="Bio Page W1 Assignment">
+    <meta name="Erick Cordon" content="Bio Page W1 Assignment">
     <title>Bio Page</title>
 
     <style>
@@ -26,11 +26,11 @@
 
 </head>
 <body>
-    <h1>Erick Cordon</h1>
+    <h1>Erick Cordon</h1> 
 
     <hr>
 
-    <div id="nav">
+    <div id="nav"> <!--Nav bar-->
         <a href="#">Bio</a>
         <a href="#">Education</a>
         <a href="#">Hobbies</a>
@@ -38,13 +38,13 @@
 
     <hr>
 
-    <div id="main">
+    <div id="main"> <!--Div around the whole text-->
 
-        <div id="bio">
+        <div id="bio"> <!--Bio Div-->
 
             <h2>My Bio</h2>
 
-            <img src="images/be031f8d02ca8cc404d44be54ee2c493.gif" alt="computer" height="200px">
+            <img src="images/be031f8d02ca8cc404d44be54ee2c493.gif" alt="computer" height="200px;"> <!--Computer-->
 
             <p>My name is <strong>Erick J Cordon</strong> and I am currently 22 years old. I am currently a <u>Software Engineering</u> student at New England Technical Institue of Technology. Since highschool I've had a little niche for coding and started learning some small code through code academy. I am hoping to become a full stack developer once I graduate.</p>
 
@@ -63,16 +63,16 @@
                 
                 <li>New England Technical Institue of Technology</li>
 
-                <ul>
+                <ol>
                     <li>Automotive with High Performace | Gpa: 3.4</li>
-                </ul>
+                </ol>
 
                 <li> <a href="https://www.neit.edu/" target="_blank">New England Technical Institue of Technology</a> </li> <!--TARGET = _BLANK MAKES THE TEXT INTO A LINK-->
 
-                <ul>
+                <ol>
                     <li>Software Engineering & Web Development | GPA: 3.5</li>
 
-                </ul>
+                </ol>
 
             </ul>
 
@@ -106,7 +106,7 @@
         </div>
 
     </div>
-
+    <hr>
     <script>
         var bio = document.querySelector(`#bio`) //this connects to the bio div
 
@@ -116,9 +116,9 @@
 
         var link = document.querySelectorAll(`a`)
 
-        link[0].addEventListener(`click`, function(e){display(bio)})
-        link[1].addEventListener(`click`, function(e){showED(ed)})
-        link[2].addEventListener(`click`, function(e){showHOB(hobbies)})
+        link[0].addEventListener(`click`, function(e){ e.preventDefault();display(bio)})
+        link[1].addEventListener(`click`, function(e){ e.preventDefault();showED(ed)})
+        link[2].addEventListener(`click`, function(e){ e.preventDefault();showHOB(hobbies)})
 
 
         function display(e)
