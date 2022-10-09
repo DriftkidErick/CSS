@@ -8,7 +8,7 @@
     <title>Bio Page</title>
 
     <style>
-        body{
+        body{ /* CSS styling */
             background-color: rgb(241, 214, 180);
         }
         h1{
@@ -48,13 +48,13 @@
 
             <p>My name is <strong>Erick J Cordon</strong> and I am currently 22 years old. I am currently a <u>Software Engineering</u> student at New England Technical Institue of Technology. Since highschool I've had a little niche for coding and started learning some small code through code academy. I am hoping to become a full stack developer once I graduate.</p>
 
-            <p>A little about me is I am an avid car enthusiast, I've been into cars since I was a young kid and currently hope to one day build one of my dream cars (an E36 BMW M3 or a Type R Civic). I'm also very into music Im super open minded to new music but my current favorite artist is <b>MF DOOM</b> with my favorite song being either "Rapp Snitch Kinishes" or "DOOMSDAY".  </p>
+            <p>A little about me is I am an avid car enthusiast, I've been into cars since I was a young kid and currently hope to one day build one of my dream cars (an E36 BMW M3 🏎️ or a Type R Civic). I'm also very into music Im super open minded to new music but my current favorite artist is <b>MF DOOM</b> with my favorite song being either "Rapp Snitch Kinishes" or "DOOMSDAY".  </p>
 
             <hr>
 
         </div>
 
-        <div id="ed" class="hide">
+        <div id="ed" class="hide"> <!--Education Div-->
 
             <h2>Schooling</h2>
 
@@ -80,12 +80,12 @@
 
         </div>
         
-        <div id="hobbies" class="hide">
+        <div id="hobbies" class="hide"> <!--Hobbies Div-->
 
             <h2>Interests</h2>
 
-            <ol>
-                <li>Taco Bell Dog</li>
+            <ol><!--ordered list-->
+                <li>Taco Bell Dog</li> 
 
                 <li>Cars</li>
 
@@ -99,43 +99,45 @@
 
         </div>
 
-        <div id="footer">
+        <div id="footer"><!--Footer-->
 
             <p>©2022 Erick Cordon | W1 Assignment</p>
 
         </div>
 
     </div>
+
     <hr>
-    <script>
+
+    <script> //Start of Java
         var bio = document.querySelector(`#bio`) //this connects to the bio div
 
         var ed = document.querySelector(`#ed`) // connects to ed div
 
         var hobbies = document.querySelector(`#hobbies`)  //connects to hobbies div
 
-        var link = document.querySelectorAll(`a`)
+        var link = document.querySelectorAll(`a`) //Links all links
 
-        link[0].addEventListener(`click`, function(e){ e.preventDefault();display(bio)})
-        link[1].addEventListener(`click`, function(e){ e.preventDefault();showED(ed)})
-        link[2].addEventListener(`click`, function(e){ e.preventDefault();showHOB(hobbies)})
+        link[0].addEventListener(`click`, function(e){ e.preventDefault();display(bio)})  //This adds Hide to ed & hobbies div if selected
+        link[1].addEventListener(`click`, function(e){ e.preventDefault();showED(ed)})      //This adds Hide to bio & hobbies div if selected
+        link[2].addEventListener(`click`, function(e){ e.preventDefault();showHOB(hobbies)})    //This adds Hide to bio & ed div if selected
 
 
-        function display(e)
+        function display(e) //Keeps Bio section open
         {
             bio.classList.remove(`hide`)
             ed.classList.add(`hide`)
             hobbies.classList.add(`hide`)
         }
 
-        function showED(e)
+        function showED(e) //Keeps Education Section open
         {
             bio.classList.add(`hide`)
             ed.classList.remove(`hide`)
-            hobbies.classList.add(`hide`)
+            hobbies.classList.add(`hide`) 
         }
 
-        function showHOB(e)
+        function showHOB(e) //Keeps Hobbies Section open
         {
             bio.classList.add(`hide`)
             ed.classList.add(`hide`)
@@ -143,5 +145,6 @@
         }
 
     </script>
+
 </body>
 </html>
