@@ -1,0 +1,28 @@
+@charset "UTF-8"; /* universal text format (8 bit) */
+
+html{height: 100%;}
+body{
+    background-color: aliceblue;
+    background-image: url(https://americacomesalive.com/wp-content/uploads/Taco-Bell-dog-1-1.jpg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(39,38,36,1) 0%, rgba(255,248,231,1) 36%, rgba(255,248,231,1) 100%);
+    
+}
+
+p{
+    color:red
+}
+
+
+div p span{
+    color: green
+}
+
+div{
+    border: 5px solid black;
+    border-color: aliceblue;
+    border-style: solid;
+}
