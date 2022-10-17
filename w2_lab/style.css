@@ -1,0 +1,39 @@
+body{
+    background-color: white;
+    color:black;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    viewport-fit: auto;
+}
+
+.nav{
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    height: 70px;
+    width: auto;
+    text-align: end;
+}
+
+.bg-main{
+    background-image: url(images/download.jpeg);
+    height: 500px;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-bottom: 10px rgba(0, 0, 0, 0.683);
+}
+
+.intro{
+    text-align: center;
+}
+
+#bio img{
+    float:left;
+    max-height: 300px;
+}
+
+
+
