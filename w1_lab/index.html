@@ -11,29 +11,34 @@
         body{ /* CSS styling */
             background-color: rgb(241, 214, 180);
         }
-        h1{
+        h1.name{
             color:green;
         }
 
-        h2{
+        h2.intro{
             color:purple;
         }
 
         .hide{
             display: none;
         }
+
+        a.link{
+            color:red
+        }
+
     </style>
 
 </head>
 <body>
-    <h1>Erick Cordon</h1> 
+    <h1 class="name">Erick Cordon</h1> 
 
     <hr>
 
     <div id="nav"> <!--Nav bar-->
-        <a href="#">Bio</a>
-        <a href="#">Education</a>
-        <a href="#">Hobbies</a>
+        <a href="#" class="link">Bio</a>
+        <a href="#" class="link">Education</a>
+        <a href="#" class="link">Hobbies</a>
     </div>
 
     <hr>
@@ -42,7 +47,7 @@
 
         <div id="bio"> <!--Bio Div-->
 
-            <h2>My Bio</h2>
+            <h2 class="intro">My Bio</h2>
 
             <img src="images/be031f8d02ca8cc404d44be54ee2c493.gif" alt="computer" height="200px;"> <!--Computer-->
 
@@ -56,7 +61,7 @@
 
         <div id="ed" class="hide"> <!--Education Div-->
 
-            <h2>Schooling</h2>
+            <h2 class="intro">Schooling</h2>
 
             <ul >
                 <li> Cranston High School East</li>
@@ -82,7 +87,7 @@
         
         <div id="hobbies" class="hide"> <!--Hobbies Div-->
 
-            <h2>Interests</h2>
+            <h2 class="intro">Interests</h2>
 
             <ol><!--ordered list-->
                 <li>Taco Bell Dog</li> 
