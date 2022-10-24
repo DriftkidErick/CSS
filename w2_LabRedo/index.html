@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w2 Lab</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+  
+<body>
+
+    <div id="nav" class="nav">
+
+        <br>
+        <br>
+        <a href="#" id="page1">Home</a> &nbsp; 
+        <a href="#" id="page2">Education</a> &nbsp;
+        <a href="#" id="page3">Hobbies</a>
+    </div>
+
+    
+
+    <div id="main">
+
+        <div id="block">
+            <h1>Hello, I'm Erick Cordon</h1>
+            <h3>I'm a Software Engineering student at the New England Institue of Techology </h3>
+        </div>
+
+        <div id="bio">
+            <img src="images/imageedit_1_9387765981.png">
+
+            <h2><u>Who's Erick Cordon?</u></h2>
+
+            
+
+            <p>My name is <strong>Erick J Cordon</strong> and I am currently 22 years old. I am currently a Software Engineering student at New England Technical Institue of Technology. Since highschool I've had a little niche for coding and started learning some small code through code academy and FreeCodeCamp. I am hoping to become a front-end developer once I graduate.</p>
+
+            <p>A little about me is I am an avid car enthusiast, I've been into cars since I was a young kid and currently hope to one day build one of my dream cars (an E36 BMW M3 🏎️ or a Type R Civic). I'm also very into music Im super open minded to new music but my current favorite artist is <b>MF DOOM</b> with my favorite song being either "Rapp Snitch Kinishes" or "DOOMSDAY". I also do some sim-racing on my free time in hopes to one day participate in time-attack racing. </p>
+            <br>
+
+        </div>
+
+        <div id="ed" class="hide">
+
+            <h2 class="intro">       <u>Schooling</u></h2>
+
+            <img src="images/e426702edf874b181aced1e2fa5c6cde.gif" alt="typing">
+
+            <ul >
+                <li> Cranston High School East</li>
+                
+                <li>New England Technical Institue of Technology</li>
+
+                <ol>
+                    <li>Automotive with High Performace | Gpa: 3.4</li>
+                </ol>
+
+                <li> <a href="https://www.neit.edu/" target="_blank">New England Technical Institue of Technology</a> </li> <!--TARGET = _BLANK MAKES THE TEXT INTO A LINK-->
+
+                <ol>
+                    <li>Software Engineering & Web Development | GPA: 3.5</li>
+
+                </ol>
+
+            </ul>
+
+        </div>
+
+        <div id="hobbies" class="hide"> <!--Hobbies Div-->
+
+            <h2 class="intro"><u>Interests</u></h2>
+
+            <img src="images/15d17c149b41de50f20d750e481010fa.gif" alt="240sx.gif">
+
+            <ol><!--ordered list-->
+                <li>Taco Bell Dog</li> 
+
+                <li>Cars</li>
+
+                <li>Music</li>
+
+            </ol>
+
+            
+
+        </div>
+
+        <div id="footer"><!--Footer-->
+
+            <p>©2022 Erick Cordon | W3 Assignment</p>
+
+        </div>
+
+    </div>
+    <script> //Start of Java
+        var bio = document.querySelector(`#bio`) //this connects to the bio div
+
+        var ed = document.querySelector(`#ed`) // connects to ed div
+
+        var hobbies = document.querySelector(`#hobbies`)  //connects to hobbies div
+
+        var header = document.querySelector(`#block`) //Connects the welcome section
+
+        var link = document.querySelectorAll(`a`) //Links all links
+
+        link[0].addEventListener(`click`, function(e){ e.preventDefault();display(bio)})  //This adds Hide to ed & hobbies div if selected
+        link[1].addEventListener(`click`, function(e){ e.preventDefault();showED(ed)})      //This adds Hide to bio & hobbies div if selected
+        link[2].addEventListener(`click`, function(e){ e.preventDefault();showHOB(hobbies)})    //This adds Hide to bio & ed div if selected
+
+
+        function display(e) //Keeps Bio section open
+        {
+            bio.classList.remove(`hide`)
+            header.classList.remove(`hide`)
+            ed.classList.add(`hide`)
+            hobbies.classList.add(`hide`)
+        }
+
+        function showED(e) //Keeps Education Section open
+        {
+            bio.classList.add(`hide`)
+            header.classList.add(`hide`)
+            ed.classList.remove(`hide`)
+            hobbies.classList.add(`hide`) 
+        }
+
+        function showHOB(e) //Keeps Hobbies Section open
+        {
+            bio.classList.add(`hide`)
+            header.classList.add(`hide`)
+            ed.classList.add(`hide`)
+            hobbies.classList.remove(`hide`)
+        }
+
+    </script>
+</body>
+</html>

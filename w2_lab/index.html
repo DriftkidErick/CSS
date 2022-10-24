@@ -11,6 +11,10 @@
 <body>
 
     <div id="nav" class="nav">
+
+        <br>
+        <br>
+        <p>EC</p>
         <a href="#">Home</a> &nbsp; 
         <a href="#">Education</a> &nbsp;
         <a href="#">Hobbies</a>
@@ -21,30 +25,32 @@
 
         <div class="bg-main"> </div>  
         
-        <h1 class="intro" >Welcome to my page</h1>
+        <h1 div="title" class="intro" >Welcome to my page</h1>
+
+        <br>
 
         <div id="bio" class="intro">
-
-            <h2>Bio</h2>
-
             <img src="images/imageedit_1_9387765981.png">
+
+            <br>
+            <br>
+
+            <h2 class="intro">Bio</h2>
 
             <p>My name is <strong>Erick J Cordon</strong> and I am currently 22 years old. I am currently a <u>Software Engineering</u> student at New England Technical Institue of Technology. Since highschool I've had a little niche for coding and started learning some small code through code academy. I am hoping to become a full stack developer once I graduate.</p>
 
             <p>A little about me is I am an avid car enthusiast, I've been into cars since I was a young kid and currently hope to one day build one of my dream cars (an E36 BMW M3 🏎️ or a Type R Civic). I'm also very into music Im super open minded to new music but my current favorite artist is <b>MF DOOM</b> with my favorite song being either "Rapp Snitch Kinishes" or "DOOMSDAY".  </p>
-
+            
         </div>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         
-        <div id="education">
+
+        <div id="ed" class="hide">
 
             <h2 class="intro">Schooling</h2>
+
+            <br>
+            <br>
 
             <ul >
                 <li> Cranston High School East</li>
@@ -79,7 +85,7 @@
 
             </ol>
 
-            <img src="images/main-qimg-4252c10023fae23e398af300775fe7f7-lq.jpeg" alt="Quiero taco bell dog">
+            <img src="images/imageedit_1_9387765981.png" alt="Quiero taco bell dog">
 
             <hr>
 
@@ -96,5 +102,42 @@
         </div>
 
     </div>
+
+    <script> //Start of Java
+        var bio = document.querySelector(`#bio`) //this connects to the bio div
+
+        var ed = document.querySelector(`#ed`) // connects to ed div
+
+        var hobbies = document.querySelector(`#hobbies`)  //connects to hobbies div
+
+        var link = document.querySelectorAll(`a`) //Links all links
+
+        link[0].addEventListener(`click`, function(e){ e.preventDefault();display(bio)})  //This adds Hide to ed & hobbies div if selected
+        link[1].addEventListener(`click`, function(e){ e.preventDefault();showED(ed)})      //This adds Hide to bio & hobbies div if selected
+        link[2].addEventListener(`click`, function(e){ e.preventDefault();showHOB(hobbies)})    //This adds Hide to bio & ed div if selected
+
+
+        function display(e) //Keeps Bio section open
+        {
+            bio.classList.remove(`hide`)
+            ed.classList.add(`hide`)
+            hobbies.classList.add(`hide`)
+        }
+
+        function showED(e) //Keeps Education Section open
+        {
+            bio.classList.add(`hide`)
+            ed.classList.remove(`hide`)
+            hobbies.classList.add(`hide`) 
+        }
+
+        function showHOB(e) //Keeps Hobbies Section open
+        {
+            bio.classList.add(`hide`)
+            ed.classList.add(`hide`)
+            hobbies.classList.remove(`hide`)
+        }
+
+    </script>
 </body>
 </html>
