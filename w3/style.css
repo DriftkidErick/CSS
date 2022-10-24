@@ -1,0 +1,53 @@
+@charset "UTF - 8";
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+main{
+    display: grid;
+    grid-template-areas: "header header header header header"
+                        "nav nav nav nav nav"
+                        "left left mid mid right"
+                        "footer footer footer footer footer"
+                        ;
+
+    grid-template-rows: 100px 50px auto 50px;
+    grid-gap:0 12px; /* 0 is top 12 is side */
+    height: 100%
+}
+
+header{
+    background-color: aqua;
+    grid-area: header;
+    
+}
+
+nav{
+    background-color: orangered;
+    grid-area: nav;
+}
+
+.left{
+    background-color: yellow;
+    grid-area: left;
+
+}
+
+.right{
+    background-color: hotpink;
+    grid-area: mid;
+}
+aside{
+    background-color: palegreen;
+    grid-area: right;
+
+}
+footer{
+    background-color: black;
+    grid-area: footer;
+}
