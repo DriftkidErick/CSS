@@ -1,10 +1,17 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 body
 {
    background-color: #16161a;
-   font-family: Georgia, 'Times New Roman';
-   color: #94a1b2;
+   font-family: 'Times New Roman';
+   color: #bcb3b3;
+}
+
+h1,h2,h3
+{
+    font-family: 'Roboto';
 }
 
 .hide
@@ -66,7 +73,7 @@ body
 }
 #ed ul
 {
-    color:#ffffff;
+    color:#bcb3b3;
     text-align: left;
     line-height: 40px;
     padding-bottom: 100px;
@@ -101,7 +108,7 @@ body
     text-align: left;
     line-height: 30px;
     padding-bottom: 40px;
-    color: #94a1b2;
+    color: #bcb3b3;
 }
 
 
@@ -123,7 +130,7 @@ body
 #hobbies p
 {
     padding-bottom: 10px;
-    color: #94a1b2;
+    color: #bcb3b3;
 }
 
 #nav
