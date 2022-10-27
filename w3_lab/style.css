@@ -1,9 +1,26 @@
 @charset "UTC-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@500&display=swap');
+
+html
+{
+    max-height: 100%;
+}
 body
 {
     background-color: #F9F4EF;
+    margin-left: 27px;
+    margin-right: 27px;
+    font-family: 'Lora';
 }
+
+h1, h2
+{
+    font-family: 'Roboto';
+    color: #Ffff;
+}
+
 #nav
 {
     background-color: #ABD1C6;
@@ -11,9 +28,9 @@ body
 
 #bio
 {
-
+    margin-top: 31px;
+    margin-bottom: 31px;
     background-color: #ABD1C6;
-    position: fixed;
     width: 1386px;
     height: 446px;
     left: 27px;
@@ -24,7 +41,7 @@ body
 #heading1
 {
     background-color: #004643;
-    position: fixed;
+    
     width: 1366px;
     height: 59px;
     left: 37px;
@@ -34,9 +51,80 @@ body
 #biotxt
 {
     background-color: #ffff;
-    position: fixed;
+    
     width: 1366px;
     height: 341px;
     left: 37px;
     top: 150px; 
+}
+
+#hobbies
+{
+    background-color: #ABD1C6;
+    height: 369px;
+    width: 943px;
+    left: 27px;
+    top: 548px;
+    margin-bottom: 50px;
+    float: left;
+
+}
+
+#heading2
+{
+    width: 909px;
+    height: 52px;
+    left: 43px;
+    top: 565px;
+    background: #004643;
+}
+
+#hobbtxt
+{
+    width: 909px;
+    height: 239px;
+    left: 43px;
+    top: 643px;
+
+    background: #FFFFFE;
+
+}
+
+#schooling
+{
+    width: 418px;
+    height: 369px;
+    left: 995px;
+    top: 548px;
+    float: right;
+    background: #ABD1C6;
+    margin-bottom: 50px;
+}
+
+#heading3
+{
+    width: 387px;
+    height: 53px;
+    left: 1005px;
+    top: 564px;
+
+    background: #004643;
+}
+
+#schooltxt
+{
+    width: 372px;
+    height: 239px;
+    left: 1018px;
+    top: 643px;
+
+    background: #FFFFFE;
+}
+
+#footer
+{
+    text-align: center;
+    color: #Ffff;
+    background-color: #ABD1C6;
+    margin-bottom: auto;
 }
