@@ -1,0 +1,42 @@
+@charset "UTC-8";
+
+body
+{
+    background-color: #F9F4EF;
+}
+#nav
+{
+    background-color: #ABD1C6;
+}
+
+#bio
+{
+
+    background-color: #ABD1C6;
+    position: fixed;
+    width: 1386px;
+    height: 446px;
+    left: 27px;
+    top: 67px;
+
+}
+
+#heading1
+{
+    background-color: #004643;
+    position: fixed;
+    width: 1366px;
+    height: 59px;
+    left: 37px;
+    top: 76px;
+}
+
+#biotxt
+{
+    background-color: #ffff;
+    position: fixed;
+    width: 1366px;
+    height: 341px;
+    left: 37px;
+    top: 150px; 
+}
