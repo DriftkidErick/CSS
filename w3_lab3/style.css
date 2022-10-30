@@ -21,9 +21,11 @@ h1,h2
     color: #ffff;
     font-size: 30px;
     font-weight: 400;
-    
+    text-shadow: black;
     
 }
+
+
 
 #main
 {
@@ -42,7 +44,6 @@ h1,h2
     grid-area: header;
     background-color: #ABD1C6;
     margin-bottom: 31px;
-    
 
 }
 
@@ -50,7 +51,7 @@ h1,h2
 {
     grid-area: bio;
     background-color: #ABD1C6;
-    height: 446px;
+   
     padding-bottom: 22px;
     margin-bottom: 31px;
     
@@ -61,7 +62,7 @@ h1,h2
     
     grid-area: bio;
     background-color: #004643;
-    height: 59px;
+    
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 9px;
@@ -86,7 +87,7 @@ h1,h2
 {
     
     background-color: #ffff;
-    height: 341px;
+    
     margin-left: 10px;
     margin-right: 10px;
     font-size: 25px;
@@ -104,13 +105,13 @@ h1,h2
 {
     grid-area: hobbies;
     background-color: #ABD1C6;
-    height: 369px;
+   
     
 }
 
 #heading2
 {
-    height: 52px;
+  
     margin-top: 17px;
     margin-left: 16px;
     margin-right: 18px;
@@ -124,7 +125,7 @@ h1,h2
     font-size: 31px;
     
     background: #FFFFFE;
-    height:239px;
+   
     background-image: url(images/carPic\(8296962440\).jpg) ;
     
     background-repeat: no-repeat;
@@ -153,7 +154,7 @@ h1,h2
 
 #heading3
 {
-    height: 52px;
+    
     margin-left: 23px;
     margin-right: 23px;
     background: #004643;
@@ -162,8 +163,7 @@ h1,h2
 #schooltxt
 {
    
-    height:239px;
-    line-height: 28.16px;
+    
     margin-left: 23px;
     margin-right: 23px;
     background: #FFFFFE;
