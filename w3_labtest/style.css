@@ -1,0 +1,169 @@
+@charset "UTF - 8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@500&display=swap');
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    height: 100%;
+    background-color:#F9F4EF ;
+    
+}
+
+h1,h2
+{
+    font-family: Roboto;
+    color: #ffff;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+
+#main
+{
+    display: grid;
+    grid-template-areas: "header header header"
+                         "bio bio bio"
+                         "hobbies hobbies schooling"
+                         "footer footer footer";
+    grid-template-rows: 100px, auto, auto, 100px;
+    grid-gap: 10px 25px ;
+    height: 100%;
+}
+
+#nav
+{
+    grid-area: header;
+    background-color: #ABD1C6;
+    margin-bottom: 31px;
+
+}
+
+#bio
+{
+    grid-area: bio;
+    background-color: #ABD1C6;
+    height: 446px;
+    padding-bottom: 22px;
+    margin-bottom: 31px;
+    
+}
+
+#heading1
+{
+    
+    grid-area: bio;
+    background-color: #004643;
+    height: 59px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 9px;
+    margin-bottom: 15px;
+}
+
+
+
+#heading1 h2
+{
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+
+    text-align:left
+
+    
+}
+
+#biotxt
+{
+    
+    background-color: #ffff;
+    height: 341px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    
+}
+
+#hobbies,#schooling
+{
+    margin-bottom: 50px;
+}
+
+#hobbies
+{
+    grid-area: hobbies;
+    background-color: #ABD1C6;
+    height: 369px;
+    
+}
+
+#heading2
+{
+    height: 52px;
+    margin-top: 17px;
+    margin-left: 16px;
+    margin-right: 18px;
+    background: #004643;
+}
+
+#hobbtxt
+{
+    margin-left: 16px;
+    margin-right: 18px;
+    font-size: 31px;
+    
+    background: #FFFFFE;
+    height:239px;
+    background-image: url(images/Porsche_911_GT2_RS_-_Club_Porsche_Toulouse_-_\(8296962440\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#hobbtxt background-image
+{
+    opacity: .5;
+}
+
+
+
+#schooling
+{
+    grid-area: schooling;
+    background-color: #ABD1C6;
+}
+
+#heading3
+{
+    height: 52px;
+    margin-left: 23px;
+    margin-right: 23px;
+    background: #004643;
+}
+
+#schooltxt
+{
+   
+    height:239px;
+    margin-left: 23px;
+    margin-right: 23px;
+    background: #FFFFFE;
+    font-size: 22px;
+}
+
+#footer
+{
+    text-align: center;
+    color: #ffff;
+    background-color: #ABD1C6;
+    grid-area: footer;
+}
