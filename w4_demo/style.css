@@ -1,13 +1,42 @@
+* {border:1px solid black;
+    box-sizing: border-box;
+}
+html
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0;
+    height: 100%;
+    display: flex ;
+    justify-content: center;
+}
+
 header{
+    width: 80%;
     background-color: aqua;
     display: flex;
-    height: 200px;
+    
     justify-content: flex-start;
     flex-wrap: wrap;
     align-content: center;
     align-items: baseline;
+}
 
+main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 80%;
+}
 
+section
+{
+    height: 100%;
 }
 
 h1{

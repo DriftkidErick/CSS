@@ -1,3 +1,6 @@
+body{
+    margin:0;
+}
 #main
 {
     display: grid;
@@ -7,6 +10,7 @@
                         "ad      ad    bio    bio    aside"
                         "footer footer footer footer footer";
 
+    
 }
 
 
@@ -35,9 +39,12 @@
 #rSide
 {
     grid-area: aside;
+
+    margin-left: 20px;
     width: 360px;
     background-color: grey ;
     height: 918px;
+    
     
 }
 
