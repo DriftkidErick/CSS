@@ -12,7 +12,7 @@ body{
 
     grid-template-areas:"header header header header header"
                         "banner banner banner banner aside"
-                        "ad     ad    bio    bio    aside"
+                        "adp     ad    bio    bio    aside"
                         "footer footer footer footer footer";
 
     
@@ -33,6 +33,7 @@ body{
 #hero
 {
     grid-area: banner;
+    height: 388px;
     
     background-image: url(images/banner.png);
     background-repeat: no-repeat;
@@ -79,27 +80,36 @@ body{
     margin-right: 17px;
 }
 
-#ad
+#lside
 {
+
+    background-color: #393939;
     border-top: 5px solid #BB0908;
     grid-area: ad;
-    background-color: #393939;
-    
-    
+    margin-left: 20px;
     margin-right: 20px;
+
+    width: 700px;
+    font-size: 18px;
+}
+
+#ad
+{
+    margin-left: 19px;
+    margin-right: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #left
 {
-    
-    border-top: 5px solid #BB0908;
-    grid-area: ad;
-
-    background-color: #393939;
-
-    margin-left: 20px;
-    
+    grid-area: adp;
+    float: left;
+    clear: right;
 }
+
+
 
 
 
