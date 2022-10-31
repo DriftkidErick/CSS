@@ -1,0 +1,27 @@
+header{
+    background-color: aqua;
+    display: flex;
+    height: 200px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: baseline;
+
+
+}
+
+h1{
+    background-color: pink;
+    padding:0;
+    margin:0;
+}
+
+nav{
+    background-color: blueviolet;
+    align-self: flex-end;
+}
+
+a:link, a:visited, a:active{
+background-color: burlywood;
+
+}
