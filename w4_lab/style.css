@@ -1,5 +1,6 @@
 body{
     margin:0;
+    color: #ffff;
 }
 #main
 {
@@ -50,21 +51,24 @@ body{
 
 #ad
 {
+    border-top: 5px solid #BB0908;
     grid-area: ad;
     background-color: grey;
-    width: 700px;
+    
     margin-left: 20px;
     margin-right: 20px;
 }
 
+
+
 #bio
 {
-    background-image: url(images/pennant.png);
-    background-repeat: no-repeat;
+
+    border-top: 5px solid #BB0908;
     margin-right: 20px;
     grid-area: bio;
     background-color: gray;
-    width: 700px;
+    
 }
 
 #footer
