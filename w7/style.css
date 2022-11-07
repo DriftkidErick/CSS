@@ -1,0 +1,66 @@
+html{
+    width: 100%;
+    font-size: 16px;
+}
+
+body
+{
+    background-color: yellow;
+    transition: all 1s;
+}
+
+div, section, main{
+    border: 1px solid black;
+}
+
+div, section{
+    margin:30px
+}
+
+main{
+    width: 80%;
+    position: relative;
+    margin: auto;
+    font-size: 2rem;
+}
+section{
+    display: block;
+    width: 50vw;
+    font-size: .5rem;
+}
+
+div{
+    font-size: 1rem;
+}
+
+@media (max-width: 1000px)
+{
+    html{
+        font-size: 32px;
+    }
+    body{
+        background-color: red;
+        transition: all 1s;
+    }
+
+    main{
+        width: 100%;
+        
+    }
+}   
+
+
+@media (max-width: 800px)
+{
+    body{
+        background-color: orange;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    section{
+        display: none;
+    }
+}   
