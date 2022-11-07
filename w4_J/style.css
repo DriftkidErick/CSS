@@ -12,6 +12,7 @@ html
 
 body
 {
+    margin: 0;
     background-color: #282828;
 }
 
@@ -29,11 +30,18 @@ body
 {
     grid-area: header; 
     font-family: Teko;
+    font-size: 48px;
+    line-height: 68.78px;
 
     color: #BB0908;
-    background-color: #070707;
-    font-size: 48px;
-    line-height: 68.78px
+    background-color: #070707;    
+}
+
+#logo
+{
+    float: right;
+    margin-top: 40px;
+    margin-right: 41px;
     
 }
 
@@ -46,12 +54,12 @@ body
 {
     grid-area: banner;
     height: 388px;
-    border-bottom: 25px;
 
     background-image: url(images/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
 
+    margin-bottom: 25px;
 
 }
 
@@ -87,11 +95,19 @@ body
     margin-top: 7px;
     margin-left:23px;
     margin-right: 12px;
+    margin-bottom: 4px;
 
     color:#BB0908;
     border-bottom: 4px solid #BB0908;
 }
-
+#ltxt
+{
+    margin-top: 7px;
+    font-family: Poppins;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 15px;
+}
 #flex
 {
     
@@ -101,11 +117,27 @@ body
 
 }
 
-#link
+#dvd
 {
     display: flex;
-    margin-bottom: 20px;
+    flex-direction: row;
     margin-top: 15px;
+    
+    
+}
+
+#dvd img
+{
+    width: 117px;
+    margin-bottom:90px;
+}
+
+#link
+{
+    width:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #blueray
@@ -209,9 +241,16 @@ body
 
 #footer
 {
-    margin-top: 25px;
-    grid-area: footer;
+    color: #FFFFFF;
     background-color: #070707;
+
+    font-family: Teko;
+    font-size: 12px;
+    line-height: 17.2px;
+
+    margin-top: 24px;
+    grid-area: footer;
+    
 }
 
 
