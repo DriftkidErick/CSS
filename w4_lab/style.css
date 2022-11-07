@@ -1,10 +1,17 @@
+@charset "UTF - 8";
+
+
+html{
+    height: 100%;
+}
+
 body{
     margin:0;
     color: #ffff;
     background-color: #282828;
 
     font-weight: 400;
-
+    
 }
 #main
 {
@@ -12,7 +19,7 @@ body{
 
     grid-template-areas:"header header header header header"
                         "banner banner banner banner aside"
-                        "adp     ad    bio    bio    aside"
+                        "ad     ad    bio    bio    aside"
                         "footer footer footer footer footer";
 
     
@@ -35,6 +42,7 @@ body{
     grid-area: banner;
     height: 388px;
     
+    
     background-image: url(images/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,12 +57,13 @@ body{
     margin-left: 20px;
     width: 360px;
     background-color: #393939 ;
-    height: 918px;
+    
     
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
+    margin-block-end: -10%;
 }
 
 #rSide p
@@ -62,6 +71,7 @@ body{
     margin-left: 44px;
     margin-right: 41px;
 }
+
 
 #sign
 {
@@ -73,8 +83,9 @@ body{
 
 #underwater
 {
-    margin-top: 24px;
-    margin-bottom: 28.48px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    
 
     margin-left: 18px;
     margin-right: 17px;
@@ -89,25 +100,86 @@ body{
     margin-left: 20px;
     margin-right: 20px;
 
-    width: 700px;
-    font-size: 18px;
+
+    
+}
+
+#adrside /* this is the right colum add */
+{
+    grid-area: ad/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    margin-left: 19px;
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 #ad
 {
-    margin-left: 19px;
-    margin-right: 20px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+    margin-left: 23px;
+    display: flex;
+    font-size: 30px;
+    border-bottom:4px solid #BB0908;
+
 }
 
-#left
+#left /*This is the image */
 {
-    grid-area: adp;
+    grid-area: ad;
     float: left;
     clear: right;
+    margin-bottom: 2px;
+    width: 310px;
+
 }
+
+#mtxt
+{
+    display: flex;
+    margin-left:19px;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+#lbttm{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 19px;
+    
+    margin-bottom: 10px;
+    
+}
+#dvd
+{
+    display: flex;
+    margin-right: 23px;
+    margin-left: 19px;
+    width: 117px;
+    height: 148px;
+    
+
+}
+
+#rtxt
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 38px;
+    
+}
+
+#amazon
+{
+    font-size: 18px;
+}
+
+#price
+{
+    font-size: 72px;
+    margin-bottom: 10px;
+}
+
 
 
 
@@ -125,12 +197,15 @@ body{
 
 #bio p
 {
+    font-size: 24px;
+    line-height: 36px;
+
     margin-left: 24px;
     margin-top: 19px;
     margin-bottom: 19px;
+    margin-right: 10px;
 
-    font-size: 24px;
-    line-height: 36px;
+    
 }
 
 #pennant
