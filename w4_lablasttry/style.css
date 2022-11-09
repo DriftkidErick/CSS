@@ -25,6 +25,18 @@ body
                         "footer footer footer footer footer";
 }
 
+#adrside{
+
+    background-color: #22C1CB;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
 #header
 {
     grid-area: header; 
@@ -111,6 +123,10 @@ body
     display: flex;
     flex-direction: row;
 
+    justify-content: space-evenly;
+
+    box-sizing: border-box;
+
     border-top: 4px solid #BB0908;
 
     margin-left: 22px;
@@ -130,18 +146,12 @@ body
     border-bottom: 4px solid #BB0908;
 }
 
-#lside img
+#poster
 {
     width: 310px;
 }
 
-#flex
-{
 
-    margin-right: 20px;
-    margin-left: 19px;
-    
-}
 
 #ltxt
 {
@@ -153,6 +163,9 @@ body
     color: #FFFFFF;
     font-size: 18px;
     line-height: 27px;
+
+    margin-left: 19px;
+    margin-right: 20px;
 
     
 }
@@ -167,7 +180,7 @@ body
 #dvd img
 {
     width: 117px;
-    height: 148px;
+    padding: 0px;
     
 }
 
@@ -177,7 +190,9 @@ body
     flex-direction: column;
     justify-content: space-between;
 
-    margin-block-end: 20px;
+
+
+    
 
 }
 
@@ -193,6 +208,8 @@ body
 #price
 {
     font-size: 72px;
+    line-height: 103px;
+    font-family: Teko;
 }
 
 
