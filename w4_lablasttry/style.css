@@ -9,10 +9,9 @@ html
 {
     height: 100%;
 }
-
 body
 {
-    margin: 0;
+    margin: 0%;    
     background-color: #282828;
 }
 
@@ -44,7 +43,6 @@ body
     margin-right: 41px;
     
 }
-
 #header h1
 {
     margin-bottom: 15px;
@@ -53,167 +51,14 @@ body
 #hero
 {
     grid-area: banner;
+    
     height: 388px;
-
+    margin-bottom: 25px;
+    
     background-image: url(images/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
-
-    margin-bottom: 25px;
-
-}
-
-#lside
-{
-    background-color: #393939;
-    grid-area: ad;
-    box-sizing: border-box;
-
-
-    border-top: 5px solid #BB0908;
-    margin-left: 22px;
-    margin-right: 20px;
-
-    color:#FFFFFF ;
-
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly ;
-
-    
-
-}
-#poster
-{
-    
-    grid-area: ad/1;
-    height: 478px;
-    
-
-    width: 310px;
-    
-
    
-    
-}
-
-#lside h2
-{
-    
-    font-family: Rock Salt;
-    font-size: 30px;
-    line-height: 71.57px;
-
-    margin-top: 7px;
-    margin-left:23px;
-    margin-right: 12px;
-    margin-bottom: 4px;
-
-
-    color:#BB0908;
-    border-bottom: 4px solid #BB0908;
-}
-
-#lhead
-{
-    margin-top: 0;
-    margin-left: 23px;
-}
-#ltxt
-{
-    margin-top: 7px;
-    font-family: Poppins;
-    font-size: 18px;
-    line-height: 27px;
-    margin-bottom: 15px;
-}
-#flex
-{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-#dvd
-{
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    
-    margin-left: 19px;
-}
-
-
-#link
-{
-    width:200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 23px;
-    margin-right: 38px;
-}
-
-#blueray
-{
-    width: 117px;
-    
-    margin-top: 15px;
-    margin-bottom: 20px;
-    
-}
-
-#amazon
-{
-    font-family: Poppins;
-    font-size: 18px;
-    line-height: 27px;
-    color:#22C1CB;
-}
-
-#price
-{
-    
-    font-family: Teko;
-    font-size: 72px;
-    line-height: 103.18px
-}
-
-
-
-#ltxt
-{
-    font-size: 18px;
-    font-family: Poppins;
-    line-height: 27px;
-}
-
-#bio
-{
-    grid-area: bio;
-    border-top: 5px solid #BB0908;
-
-    
-
-    color: #FFFFFF;
-    font-size: 24px;
-    line-height: 36px;
-    background-color: #393939;
-
-}
-
-#bio img
-{
-    width: 641px;
-
-}
-
-#bio img, p
-{
-    margin-left: 20px;
-    margin-right: 35px;
 }
 
 #rSide
@@ -222,17 +67,18 @@ body
     background-color: #393939;
 
     width: 360px;
-    margin-left: 20px;;
+    margin-left: 20px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     color:#FFFFFF;
-    margin-block-end: -30px;
+    
 
     font-family: Roboto;
     font-size: 18px;
+    line-height: 21.09px;
 }
 
 #rSide p
@@ -255,18 +101,137 @@ body
     margin-right: 17px;
 }
 
-#footer
+#lside
 {
-    color: #FFFFFF;
-    background-color: #070707;
+    background-color: #393939;
+    grid-area: ad;
+    
 
-    font-family: Teko;
-    font-size: 12px;
-    line-height: 17.2px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
 
-    margin-top: 24px;
-    grid-area: footer;
+    border-top: 4px solid #BB0908;
+
+    margin-left: 22px;
+    margin-right: 20px;
+
+}
+
+#lside h2
+{
+    
+    font-family: Rock Salt;
+    font-size: 30px;
+    line-height: 71.57px;
+
+
+    color:#BB0908;
+    border-bottom: 4px solid #BB0908;
+}
+
+#lside img
+{
+    width: 310px;
+}
+
+#flex
+{
+
+    margin-right: 20px;
+    margin-left: 19px;
     
 }
 
+#ltxt
+{
+    margin-top: 7px;
+    margin-bottom: 16px;
+    margin-left: 19px;
 
+    font-family: Poppins;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 27px;
+
+    
+}
+
+#dvd
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#dvd img
+{
+    width: 117px;
+    height: 148px;
+    
+}
+
+#link
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-block-end: 20px;
+
+}
+
+
+#amazon
+{
+    font-family: Poppins;
+    font-size: 18px;
+    line-height: 27px;
+    color:#22C1CB;
+}
+
+#price
+{
+    font-size: 72px;
+}
+
+
+#bio
+{
+    grid-area: bio;
+    border-top: 5px solid #BB0908;
+
+    width: 700px;
+
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 36px;
+    background-color: #393939;
+
+}
+
+#bio img
+{
+    width: 641px;
+
+}
+
+#bio img, p
+{
+    margin-left: 20px;
+    
+}
+
+#footer
+{
+    margin-top: 24px;
+    grid-area: footer;
+    color: white;
+    background-color: #070707;
+}
+
+#footer p
+{
+    margin-top: 21px;
+    margin-bottom: 22px;
+}
