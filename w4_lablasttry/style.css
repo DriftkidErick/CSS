@@ -180,13 +180,13 @@ body
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    
 }
 
 #dvd img
 {
     width: 117px;
-    padding: 0px;
+    height: 200px;
     
 }
 
@@ -194,12 +194,8 @@ body
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
-
 
     
-
 }
 
 
@@ -213,9 +209,15 @@ body
 
 #price
 {
-    font-size: 72px;
-    line-height: 103px;
+    position: absolute;
+
     font-family: Teko;
+
+    font-size: 72px;
+
+    text-decoration: underline;
+
+    color: #FFFFFF;
 }
 
 

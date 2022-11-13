@@ -8,243 +8,255 @@
 html
 {
     height: 100%;
+    background-color:#282828;
+
 }
 body
 {
     min-height: 100%;
     margin: 0%;
-    background-color: #282828;
-
+   
 }
+
 #main
 {
     display: grid;
-    grid-template-areas: "header header header header header"
+    grid-template-areas: "header header header header header" 
                         "banner banner banner banner aside"
-                        "ad ad  bio bio aside"
+                        "ad ad bio bio aside"
                         "footer footer footer footer footer";
 }
 
 #header
 {
-    grid-area: header;
-    font-family: teko;
+    
+       
+    grid-area: header; 
+   
+    font-family: Teko;
     font-size: 48px;
     line-height: 68.78px;
 
-    background-color: #070707;
-    color: #bb0908;
+    color: #BB0908;
+    background-color: #070707;   
 }
 #header h1
-{
-    margin-bottom: 15px;
-}
-
+{margin-bottom: 15px;}
 #logo
 {
+ 
+
     float: right;
     margin-top: 40px;
     margin-right: 41px;
     
 }
 
-#hero
+#banner
 {
     grid-area: banner;
-
-    padding: 0%;
-    
-    height: 388px;
-
-    margin-bottom: 25px;
 
     background-image: url(images/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
 
-#rSide
-{
-    grid-area: aside;
+    height: 388px;
 
-    background-color: #393939;
-    color:#FFFFFF;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    font-family: Roboto;
-    font-size: 18px;
-    line-height: 21.09px;
-
-    margin-left: 20px;
+    margin-bottom: 25px;
     
-
-}
-
-#rSide img
-{
-    width: 325px;
-}
-
-#rSide b
-{
-    color:#FC0303;
-}
-
-#rSide p
-{
-    margin-left: 44px;
-
-    margin-right: 41px;
-}
-
-#underwater
-{
-    margin-bottom: 28.48px;
-    margin-left: 18px;
-    margin-right: 17px;
 }
 
 #lside
 {
-    
+    background-color: #393939;
+
+    border-top: 5px solid #BB0908;
+
     grid-area: ad;
+
+    display: flex;
 
     width: 700px;
 
     margin-left: 22px;
-    
-    background-color:#393939;
 
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    margin-bottom: 24px;
 
-    border-top: 4px solid #BB0908;
+    font-family: Roboto;
 
+    font-size: 18px;
 }
 
-#poster
+#anny
 {
-    width: 310px;
-    padding: 0%;
-}
+    font-family:Rock Salt ;
 
-#lside h2
-{
-    font-family: Rock Salt;
-    font-size: 30px;
-    line-height: 71.57px;
+    color:#FF1D29;
 
-    color:#BB0908;
     border-bottom: 4px solid #BB0908;
+
+    width: 353px;
+
+
 }
 
-#flex
+#lsideinfo
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-
     margin-left: 19px;
-    margin-right: 19px;
 }
 
-#ltxt
+#txt
 {
     font-family: Poppins;
-    color: #FFFFFF;
+
     font-size: 18px;
+
     line-height: 27px;
-    margin-bottom: 15px;
+
+    color: #FFFFFF;
+}
+
+#hardpart
+{
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 20px;
 }
 
 #dvd
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    height: fit-content;
-
-
-}
-
-#dvd img
-{
-    height: 191px;
+    height: 200px;
     width: 117px;
-    
 }
 
 #link
 {
-    margin-left: 23px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     
     
+    flex-shrink: 1000;
+    margin-left: 15px;
 }
-
-
 
 #amazon
 {
-    color:#22c1cb;
-    font-family: Poppins;
-    border-bottom: 2px solid #22c1cb;
+    font-family:Poppins;
+
     font-size: 18px;
 
+    text-decoration: underline;
+
+    color: #22C1CB;
 }
 
 #price
 {
-    
+    position: absolute;
+
     font-family: Teko;
+
     font-size: 72px;
+
+    text-decoration: underline;
 
     color: #FFFFFF;
 }
 
 
-#bio
-{   
-    grid-area: bio;
-    width: 700px;
-
+#middle
+{
     background-color: #393939;
+
+    border-top: 5px solid #BB0908;
+    
+    grid-area: bio;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 700px;
 
     margin-left: 20px;
 
-    border-top: 4px solid #BB0908;
+    margin-bottom: 24px;
+    
 
-    font-family: Poppins;
-    font-size: 24px;
+    font-family:Poppins ;
+
     color: #FFFFFF;
+
+    font-size: 24px;
+
     line-height: 36px;
 }
 
-#bio img
+#pennant
 {
+    margin-top: 17px;
     width: 641px;
-    margin-top: 20px;
-}
-#bio p
-{
-    margin-top: 20px;
     margin-left: 24px;
-    margin-right: 15px;
+}
+#bio
+{
+    margin-left: 24px;
+}
+
+#rside
+{
+    background-color: #393939;
+
+    grid-area: aside;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-evenly;
+
+    width: 360px;
+
+    margin-left: 20px;
+
+    color: #FFFFFF;
+    
+    
+}
+
+#rside img
+{
+    margin-left: 17px;
+    margin-right: 18px;
+}
+
+#rside p
+{
+    margin-left: 44px;
+    margin-right: 41px;
+}
+
+#rside b
+{
+    color: #FC0303;
 }
 
 #footer
 {
-    color: #FFFFFF;
-    margin-top: 24px;
     grid-area: footer;
-    background-color: #070707;
 
+    font-family: Teko;
+
+    font-size: 12px;
+    background-color: black;
+    color: #FFFFFF;
 }
 
+#footer p
+{
+    margin-top: 21px;
+    margin-left: 30px;
+    margin-bottom: 22px;
+}
