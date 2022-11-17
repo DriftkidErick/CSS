@@ -146,7 +146,7 @@ body
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     margin-left: 19px;
     margin-right: 19px;
@@ -161,35 +161,29 @@ body
     margin-bottom: 15px;
 }
 
-#dvd
+#dvd /* flex box that grabbs dvd/ amazon/ price */
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    height: fit-content;
-
-
 }
 
 #dvd img
 {
-    height: 191px;
+
+    float: left;
     width: 117px;
     
 }
 
-#link
+#link /*flexbox that groups dvd and price */
 {
     margin-left: 23px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
-    
-}
-
-
+}   
 
 #amazon
 {
@@ -200,7 +194,7 @@ body
 
 }
 
-#price
+#price 
 {
     
     font-family: Teko;
