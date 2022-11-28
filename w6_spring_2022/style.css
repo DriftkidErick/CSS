@@ -1,6 +1,14 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 html, body{
     margin:0;
     height:100%;
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 14.06px;
 }
 body{
     box-sizing:border-box;
@@ -17,9 +25,16 @@ main{
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #505050;
     height: 24px;
+}
+
+header div{
+    margin-left: 44px;
+    margin-right: 8px;
+    margin-top: 4px;
+    color: #E3E3E3;
 }
 
 #setting{
@@ -27,6 +42,12 @@ header{
 	width: 12px;
 	height: 12px;
     margin-top: 7px;
+}
+
+#setting:hover{
+    background: url('images/sprites.png') no-repeat -433px -190px;
+	width: 12px;
+	height: 12px;
 }
 
 section{
@@ -47,13 +68,16 @@ aside{
     
 
 }
+
 #tray{
     background: url(images/tray.png);
     color: transparent;
     height: 32px;
     width: 26px;
-  
-   
+
+}
+#tray:hover{
+    background: url(images/images/trayhover.png);
 }
 
 #window{
@@ -61,9 +85,10 @@ aside{
     color: transparent;
     height: 32px;
     width: 26px;
-    padding-bottom: 590px;
-  
-    
+}
+
+#window:hover{
+    background: url(images/images/windowHover.png); 
 }
 
 #trash{
@@ -74,6 +99,10 @@ aside{
     position: absolute;
     bottom:15px;
     
+}
+
+#trash:hover{
+    background: url(images/images/trashhover.png);
 }
 
 
@@ -94,9 +123,13 @@ nav summary
 {
     border-top: solid #7B7575 1px;
     border-bottom: solid #7B7575 1px;
+    padding: .8em;
 }
-nav ul:hover{
+
+nav li:hover{
     color: #FFFFFF;
+    filter: opacity(0.5) drop-shadow(0 0 0 rgb(252, 252, 252));
+    cursor: grab; /*this was me testing stuff out */
 }
 
 
@@ -117,28 +150,45 @@ summary{
     #tabs{
         background-color: #060606;
         display:flex;
+        gap: 2px;
+
+        
     }
         #tabs a{
             width:100px;
             height:40px;
             display:inline-block;
+            text-decoration: none;
+            color: #E3E3E3;
         }
         #tabs a:link, #tabs a:visited{
             background-color:#373737;
-            color: #FFFFFF;
+            
+            
             
         }
         #tabs a:hover, #tabs a:active{
-            background-color:blue;
-            color: green;
+            background-color:#161616;
+            color: #FFFFFF;
         }
+        #tabs i{
+            margin-top: 15px;
+            margin-left: 15px;
+            
+        }
+
     #breadcrumbs{
         background-color: #161616;
         color: #0058A9;
     }
+    #breadcrumbs a{
+        color:#0058A9;
+        margin-left: 10px;
+    }
     #breadcrumbs a:hover{
         color: #FFFFFF;
     }
+
     textarea{
         resize:none;
         width:100%;
@@ -149,9 +199,29 @@ summary{
         background-color:black;
         color:white;
     }
+
 footer{
     height:16px;
     background-color:#0254A0;
+
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+
+footer img{
+    margin-right: 10px;
+    margin-left: auto;
+}
+footer img:hover{
+    background-image: url(images/images/barsHover.png);
+}
+footer p{
+    margin-block-start: 1px;
+    color: #FFFFFF;
+    margin-left: 16px;
+
 }
 
 .hidden{
