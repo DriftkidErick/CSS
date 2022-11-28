@@ -16,9 +16,9 @@ for(let i=0; i<tabs.length; i++)
     tabs[i].addEventListener(`click`, function(e){
         for(let i=0; i<tabs.length; i++)
         {
-            tabs[i].style.backgroundColor=`orange`;
+            tabs[i].style.backgroundColor=`#373737`;
         }
-        e.target.style.backgroundColor=`rgb(101, 105, 97)`;
+        e.target.style.backgroundColor=`#161616`;
         document.querySelectorAll(`#breadcrumbs a`)[3].innerHTML = `Tabs ${i+1}`
     });
 }

@@ -15,9 +15,20 @@ main{
     flex-direction: column;
 }
 header{
-    background-color: brown;
-    height:24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #505050;
+    height: 24px;
 }
+
+#setting{
+    background: url('images/sprites.png') no-repeat -433px -1px;
+	width: 12px;
+	height: 12px;
+    margin-top: 7px;
+}
+
 section{
     height:100%;
     background-color:burlywood;
@@ -26,17 +37,69 @@ section{
 }
 aside{
     width:50px;
-    background-color:cadetblue;
+    background-color:#505050;
+
+    display: flex;
+    
+    flex-direction: column;
+    
+    align-items: center;   
+    
+
 }
+#tray{
+    background: url(images/tray.png);
+    color: transparent;
+    height: 32px;
+    width: 26px;
+  
+   
+}
+
+#window{
+    background: url(images/tiles.png) no-repeat;
+    color: transparent;
+    height: 32px;
+    width: 26px;
+    padding-bottom: 590px;
+  
+    
+}
+
+#trash{
+    background: url(images/trash.png) no-repeat;
+    color: transparent;
+    height: 32px;
+    width: 26px;
+    position: absolute;
+    bottom:15px;
+    
+}
+
+
+
 nav{
 
     width:150px;
-    background-color:rgb(0, 243, 130);
+    background-color: #373737;
     transition:width 1s;
     display:flex;
+    flex-direction: column-reverse;
     justify-content: flex-end;
     overflow:hidden;
+    color: #E3E3E3;
+
 }
+nav summary
+{
+    border-top: solid #7B7575 1px;
+    border-bottom: solid #7B7575 1px;
+}
+nav ul:hover{
+    color: #FFFFFF;
+}
+
+
 details{
     margin:5px;
     width:90px;
@@ -49,9 +112,10 @@ summary{
     background-color:rgb(255, 179, 255);
     display:flex;
     flex-direction: column;
+    
 }
     #tabs{
-        background-color: chartreuse;
+        background-color: #060606;
         display:flex;
     }
         #tabs a{
@@ -60,14 +124,20 @@ summary{
             display:inline-block;
         }
         #tabs a:link, #tabs a:visited{
-            background-color:orange;
-
+            background-color:#373737;
+            color: #FFFFFF;
+            
         }
         #tabs a:hover, #tabs a:active{
-            background-color: rgb(101, 105, 97);
+            background-color:blue;
+            color: green;
         }
     #breadcrumbs{
-        background-color: rgb(101, 105, 97);
+        background-color: #161616;
+        color: #0058A9;
+    }
+    #breadcrumbs a:hover{
+        color: #FFFFFF;
     }
     textarea{
         resize:none;
@@ -81,7 +151,7 @@ summary{
     }
 footer{
     height:16px;
-    background-color:blue;
+    background-color:#0254A0;
 }
 
 .hidden{
