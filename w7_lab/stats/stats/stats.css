@@ -1,3 +1,4 @@
+@charset "UTC-8";
 
 html, body{
     margin:0;
@@ -61,17 +62,21 @@ td{
 @media (max-width: 500px)
 {
     body{
-        background-color: brown;
+        background-color: #eff0f3;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
     }
     h1{
         font-size: 2rem;
+        color:#0d0d0d;
     }    
     thead{
         font-size: 1.5rem;
+        color:#d9376e;
     }
     tbody{
         font-size: 1rem;
+        color:#ff8e3c;
     }
     .stat{ /* here youre targeting the stats and this makes them disappear */   
         display: none;
