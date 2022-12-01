@@ -1,0 +1,79 @@
+
+html, body{
+    margin:0;
+    height:100vh;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+table{
+    width:80%;
+    border-collapse: collapse;
+}
+ td{
+    border-bottom:1px solid black;
+}
+
+@media (max-width: 1920px)
+{
+    
+    
+    h1{
+        font-size: 1.5rem;
+    }
+    td{
+        font-size: 1rem;
+    }
+    tbody{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:1000px)
+{
+    body{
+        background-color: #55423d;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ffc0ad;
+    }
+    h1{
+        font-size: 1.5rem;
+       
+        color: white;
+        text-decoration: underline solid black 3px;
+    }    
+    thead{
+        font-size: 1rem;
+    }
+
+    tbody{
+        font-weight: 1rem;
+    }
+
+    tr:first-child{
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px)
+{
+    body{
+        background-color: brown;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h1{
+        font-size: -200em;
+    }    
+    thead{
+        font-size: -150em;
+    }
+    tbody{
+        font-size: 125rem;
+    }
+    .stat{ /* here youre targeting the stats and this makes them disappear */   
+        display: none;
+    }
+}

@@ -1,0 +1,231 @@
+@charset "UTC-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+html, body{
+    margin:0;
+    height:100%;
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 14.06px;
+}
+body{
+    box-sizing:border-box;
+    display:flex;
+    justify-content: center;
+    align-items: stretch;
+}
+main{
+    width:100%;
+    background-color:blueviolet;
+    display:flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #505050;
+    height: 24px;
+}
+
+header div{
+    margin-left: 44px;
+    margin-right: 8px;
+    margin-top: 4px;
+    color: #E3E3E3;
+}
+
+#setting{
+    background: url('images/sprites.png') no-repeat -433px -1px;
+	width: 12px;
+	height: 12px;
+    margin-top: 7px;
+}
+
+#setting:hover{
+    background: url('images/sprites.png') no-repeat -433px -190px;
+	width: 12px;
+	height: 12px;
+}
+
+section{
+    height:100%;
+    background-color:burlywood;
+    display:flex;
+    justify-content: flex-start;
+}
+aside{
+    width:50px;
+    background-color:#505050;
+
+    display: flex;
+    
+    flex-direction: column;
+    
+    align-items: center;   
+    
+
+}
+
+#tray{
+    background: url(images/tray.png);
+    color: transparent;
+    height: 32px;
+    width: 26px;
+
+}
+#tray:hover{
+    background: url(images/images/trayhover.png);
+}
+
+#window{
+    background: url(images/tiles.png) no-repeat;
+    color: transparent;
+    height: 32px;
+    width: 26px;
+}
+
+#window:hover{
+    background: url(images/images/windowHover.png); 
+}
+
+#trash{
+    background: url(images/trash.png) no-repeat;
+    color: transparent;
+    height: 32px;
+    width: 26px;
+    position: absolute;
+    bottom:15px;
+    
+}
+
+#trash:hover{
+    background: url(images/images/trashhover.png);
+}
+
+
+
+nav{
+
+    width:150px;
+    background-color: #373737;
+    transition:width 1s;
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    overflow:hidden;
+    color: #E3E3E3;
+
+}
+nav summary
+{
+    border-top: solid #7B7575 1px;
+    border-bottom: solid #7B7575 1px;
+    padding: .8em;
+}
+
+nav li:hover{
+    color: #FFFFFF;
+    filter: opacity(0.5) drop-shadow(0 0 0 rgb(252, 252, 252));
+    cursor: grab; /*this was me testing stuff out */
+}
+
+
+details{
+    margin:5px;
+    width:90px;
+}
+summary{
+    width:90px;
+}
+#content{
+    width:100%;
+    background-color:rgb(255, 179, 255);
+    display:flex;
+    flex-direction: column;
+    
+}
+    #tabs{
+        background-color: #060606;
+        display:flex;
+        gap: 2px;
+
+        
+    }
+        #tabs a{
+            width:100px;
+            height:40px;
+            display:inline-block;
+            text-decoration: none;
+            color: #E3E3E3;
+        }
+        #tabs a:link, #tabs a:visited{
+            background-color:#373737;
+            
+            
+            
+        }
+        #tabs a:hover, #tabs a:active{
+            background-color:#161616;
+            color: #FFFFFF;
+        }
+        #tabs i{
+            margin-top: 15px;
+            margin-left: 15px;
+            
+        }
+
+    #breadcrumbs{
+        background-color: #161616;
+        color: #0058A9;
+    }
+    #breadcrumbs a{
+        color:#0058A9;
+        margin-left: 10px;
+    }
+    #breadcrumbs a:hover{
+        color: #FFFFFF;
+    }
+
+    textarea{
+        resize:none;
+        width:100%;
+        height:100%;
+        box-sizing: border-box;
+        border:none;
+        outline:none;
+        background-color:black;
+        color:white;
+    }
+
+footer{
+    height:16px;
+    background-color:#0254A0;
+
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+
+footer img{
+    margin-right: 10px;
+    margin-left: auto;
+}
+footer img:hover{
+    background-image: url(images/images/barsHover.png);
+}
+footer p{
+    margin-block-start: 1px;
+    color: #FFFFFF;
+    margin-left: 16px;
+
+}
+
+.hidden{
+    width:0;
+    padding:0;
+    transition:width 1s;
+}
