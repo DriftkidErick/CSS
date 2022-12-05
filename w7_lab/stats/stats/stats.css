@@ -26,6 +26,7 @@ td{
     }
     thead{
         font-size: 1rem;
+        background-color: grey;
     }
     tbody{
         font-size: 1rem;
@@ -51,6 +52,7 @@ td{
     }    
     thead{
         font-size: 1rem;
+        background-color: #735952;
     }
 
     tbody{
@@ -80,6 +82,7 @@ td{
     }    
     thead{
         font-size: 1.5rem;
+        background-color: #D2D5DD;
         color:#d9376e;
     }
     tbody{
