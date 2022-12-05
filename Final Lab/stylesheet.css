@@ -1,28 +1,13 @@
-html, body{
-    height: 100%;
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-#header{
-    background-color: #DDDDDD;
+
+#featured{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
 }
-header img{
-    width: 207px;
-    margin-top: 20px;
-    margin-left: 20px;
-}
 
-nav{
-    text-align: right;
-}
-
-footer{
-    background-color: #DDDDDD;
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-}
-
-footer img{
-    width: 40px;
-    height: 40px;;
-}
