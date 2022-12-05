@@ -26,9 +26,14 @@ td{
     }
     thead{
         font-size: 1rem;
+        background-color: grey;
     }
     tbody{
         font-size: 1rem;
+    }
+    tr:last-child
+    {
+        display: none;
     }
 }
 
@@ -47,6 +52,7 @@ td{
     }    
     thead{
         font-size: 1rem;
+        background-color: #735952;
     }
 
     tbody{
@@ -56,6 +62,10 @@ td{
     tr:first-child{
         display: none;
     }
+    tr:last-child
+    {
+        display:contents;
+    }
 
 }
 
@@ -63,7 +73,7 @@ td{
 {
     body{
         background-color: #eff0f3;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
         
     }
     h1{
@@ -72,6 +82,7 @@ td{
     }    
     thead{
         font-size: 1.5rem;
+        background-color: #D2D5DD;
         color:#d9376e;
     }
     tbody{
