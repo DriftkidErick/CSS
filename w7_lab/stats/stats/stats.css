@@ -30,6 +30,10 @@ td{
     tbody{
         font-size: 1rem;
     }
+    tr:last-child
+    {
+        display: none;
+    }
 }
 
 @media (max-width:1000px)
@@ -56,6 +60,10 @@ td{
     tr:first-child{
         display: none;
     }
+    tr:last-child
+    {
+        display:contents;
+    }
 
 }
 
@@ -63,7 +71,7 @@ td{
 {
     body{
         background-color: #eff0f3;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
         
     }
     h1{
