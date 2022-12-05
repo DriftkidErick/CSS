@@ -1,11 +1,22 @@
-#nav{
-    background-color:#dddddd;
+nav{
+    background-color: black;
+    padding-bottom: 20px;
 }
+
 #hero{
-    background-image: url(images/depositphotos_55234869-stock-illustration-abstract-gradient-gray-white-geometric.jpg);
+    
+    background-size: contain;
+    ;
+    
 }
 .links{
     padding-top: 15px;
+}
+
+#cards{
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 h3{
@@ -15,4 +26,6 @@ h3{
     flex-direction: row;
     justify-content: space-between;
 }
-
+footer{
+    margin-top: 25px;
+}
