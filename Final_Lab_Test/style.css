@@ -1,6 +1,6 @@
 nav{
-    background-color: black;
-    padding-bottom: 20px;
+    background-color: #dddddd;
+    padding-bottom: 50 px;
 }
 
 #hero{
@@ -27,5 +27,5 @@ h3{
     justify-content: space-between;
 }
 footer{
-    margin-top: 25px;
+    margin-top: 20px;
 }
