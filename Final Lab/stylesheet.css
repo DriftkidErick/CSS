@@ -1,4 +1,6 @@
-
+#hero{
+  
+}
 
 .row{
   margin-left: 35px;
@@ -8,9 +10,24 @@
 
 .card-title{
   margin-left: 5px;
+  margin-bottom: 0;
+}
+
+.card-block{
+  margin-bottom: 10px;
 }
 
 .card-text{
   margin-left: 10px;
   margin-right: 5px;
+  
+}
+
+#card{
+  margin-left: 17%;
+}
+
+#animoji{
+  margin-left: 38%;
+  
 }
