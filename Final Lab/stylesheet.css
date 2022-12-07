@@ -1,13 +1,12 @@
-#about{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
-#featured{
+.column {
+    float: left;
+    width: 40%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-}
-
+    clear: both;
+  }
