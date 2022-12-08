@@ -1,46 +1,5 @@
-nav{
-    background-color: #dddddd;
-    padding-bottom: 50 px;
-}
-
-#hero{
-    
-    background-size: contain;
-    ;
-    
-}
-.links{
-    padding-top: 15px;
-}
-
-#cards{
-    margin-top: 15px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-
-
-#about{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-
-}
-
-#featured{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-}
-
-h3{
-    margin-left: 35px;
-    margin-right: 35px;;
+.row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-footer{
-    margin-top: 20px;
 }
