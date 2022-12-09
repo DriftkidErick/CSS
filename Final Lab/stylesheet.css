@@ -37,10 +37,19 @@
   padding-bottom: 1%;
 }
 
-.card:first-child{
+.card{
+  margin-bottom: 10px;
+}
+
+.card-deck{
   margin-bottom: 10px;
 }
 
 a:hover{
   color: aliceblue;
 }
+
+#carouselExampleIndicators{
+  margin-bottom: 15px;
+}
+
