@@ -46,10 +46,19 @@
 }
 
 a:hover{
-  color: aliceblue;
+  color: blue;
+}
+a:active{
+  color: green;
 }
 
 #carouselExampleIndicators{
   margin-bottom: 15px;
 }
 
+#deck{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #ffffff;
+}
