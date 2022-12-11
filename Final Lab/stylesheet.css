@@ -62,3 +62,7 @@ a:active{
   margin-right: 20px;
   color: #ffffff;
 }
+
+.carousel-inner{
+  height:80%;
+}
