@@ -1,55 +1,67 @@
-#hero{
-  
-}
+@charset "UTC-8";
 
-.row{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); /* Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap'); /*Work Sans */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap'); /*Cormorant*/
+
+
+p{ /**/
+  font-family: Work Sans;
+}
+h2, h3, h4{
+  font-family: Roboto;
+}
+h5, h6{
+  font-family: Cormorant;
+}
+.row /**/{
   margin-left: 35px;
   margin-right: 35px;
   margin-bottom: 10px;;
 }
 
-.card-title{
+.card-title /**/{
   margin-left: 5px;
   margin-bottom: 0;
 }
 
-.card-block{
+.card-block /**/{
   margin-bottom: 10px;
 }
 
-.card-text{
+.card-text/**/{
   margin-left: 10px;
   margin-right: 5px;
   
 }
 
-#card{
+#card /**/{
   margin-left: 17%;
 }
 
-#animoji{
+#animoji/**/{
   margin-left: 15%;
   
 }
 
-#footer{
+#footer/**/{
   background-color: #f8f9fa;
   padding-bottom: 1%;
 }
 
-.card{
+.card/**/{
   margin-bottom: 10px;
 }
 
-.card-deck{
+.card-deck/**/{
   margin-bottom: 10px;
 }
 
 a:hover{
   color: blue;
 }
-a:active{
-  color: green;
+a::active{
+  color: black;
 }
 
 #carouselExampleIndicators{
@@ -61,8 +73,4 @@ a:active{
   margin-left: 20px;
   margin-right: 20px;
   color: #ffffff;
-}
-
-.carousel-inner{
-  height:80%;
 }
